@@ -7,7 +7,7 @@ import sklearn
 from sklearn.preprocessing import LabelEncoder,MinMaxScaler
 
 
-app = Flask(__name__,template_folder='D:/Datamites Training/machinefailure/template')
+app = Flask(__name__,template_folder='template/')
 
 with open('machine_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
